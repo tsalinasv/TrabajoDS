@@ -14,7 +14,7 @@ function Barra_nav() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="justify-content-end" style={{ width: "100%" , fontWeight: 500}}>
+          <Nav className="justify-content-end" style={{ width: "100%" , fontWeight: 400}}>
             <Nav.Link href="/inicio">Inicio</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item href="/promociones">Promociones</NavDropdown.Item>

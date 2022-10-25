@@ -8,7 +8,7 @@ function Slide_Peq_2() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500}}
+          style={{ height: 500, borderRadius: 25}}
           src={Carcasa1}
           alt="First slide"
         />
@@ -16,7 +16,7 @@ function Slide_Peq_2() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500}}
+          style={{ height: 500, borderRadius: 25}}
           src={Carcasa2}
           alt="Second slide"
         />

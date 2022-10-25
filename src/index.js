@@ -10,6 +10,10 @@ import NuevosProd from './components/Paginas/NuevosProd';
 import TodosProd from './components/Paginas/TodosProd';
 import Nosotros from './components/Paginas/Nosotros';
 import Clientes from './components/Paginas/Clientes';
+import Soporte from './components/Paginas/Soporte';
+import Blog from './components/Paginas/Blog';
+import Afiliados from './components/Paginas/Afiliados';
+import Contenido from './components/Paginas/Contenido';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +27,10 @@ root.render(
       <Route path = "/todos+los+productos" element={<TodosProd/>}/>
       <Route path = "/nosotros" element={<Nosotros/>}/>
       <Route path = "/cliente" element={<Clientes/>}/>
+      <Route path = "/soporte" element={<Soporte/>}/>
+      <Route path = "/blog" element={<Blog/>}/>
+      <Route path = "/afiliados" element={<Afiliados/>}/>
+      <Route path = "/contenido" element={<Contenido/>}/>
     </Routes>
   </Router>
 );

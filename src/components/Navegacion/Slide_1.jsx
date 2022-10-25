@@ -10,16 +10,15 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500}}
+          style={{ height: 500, borderRadius: 25}}
           src={Pad4}
           alt="First slide"
-          border-radius= "50px"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500}}
+          style={{ height: 500, borderRadius: 25}}
           src={Pad1}
           alt="Second slide"
         />
@@ -27,7 +26,7 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500}}
+          style={{ height: 500, borderRadius: 25}}
           src={Pad2}
           alt="Third slide"
         />
@@ -35,7 +34,7 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500}}
+          style={{ height: 500, borderRadius: 25}}
           src={Pad3}
           alt="Fourth slide"
         />

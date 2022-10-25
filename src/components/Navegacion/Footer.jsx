@@ -9,34 +9,32 @@ function Footer() {
         <footer className = "py-4 bg-dark" style={{color: "#D7D4D3"}}>
             <div className="container">
                 <nav className="row">
-                    <div className='col-12 col-md-6 d-flex align-items-center justify-content-start'>
-                        <div className='row'>
-                            <NavLink to="/inicio" ><img src={Logo2} className="mx-2" height="150"/></NavLink>
-                        </div>
-                        <div className='row'>
-                            <h1>Tu nuevo lugar favorito para conseguir tus productos</h1>
-                        </div>
+                    <div className='col-md-6 d-flex align-items-center justify-content-start'>
+                        <nav className="row">
+                            <NavLink to="/inicio" ><img src={Logo2} height="150"/></NavLink>
+                            <h5 style={{fontWeight: 500}} className="col-md-9">Tu nuevo lugar favorito para conseguir todos tus productos.</h5>
+                        </nav>
                     </div>
                     <ul className='col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Links Útiles</h5></li>
-                        <li>Contenido</li>
-                        <li>Cómo Funciona</li>
-                        <li>Soporte</li>
-                        <li>Ubícanos</li>
-                        <li>Terminos y servicios</li>
+                        <li><NavLink to="/contenido">Contenido</NavLink></li>
+                        <li><NavLink to="/contenido">Cómo Funciona</NavLink></li>
+                        <li><NavLink to="/soporte">Soporte</NavLink></li>
+                        <li><NavLink to ="/nosotros">Ubícanos</NavLink></li>
+                        <li><NavLink to="/contenido">Terminos y servicios</NavLink></li>
                     </ul>                    
                     <ul className='col-12 col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Comunidad</h5></li>
-                        <li>FAQ</li>
+                        <li><NavLink to="/soporte">FAQ</NavLink></li>
                         <li><NavLink to="/cliente">Clientes</NavLink></li>
-                        <li>Sugerencias</li>
-                        <li>Blog</li>
-                        <li>Newsletters</li>
+                        <li><NavLink to="/cliente">Sugerencias</NavLink></li>
+                        <li><NavLink to="/blog">Blog</NavLink></li>
+                        <li><NavLink to="/cliente">Newsletters</NavLink></li>
                     </ul>
                     <ul className='col-12 col-md-2  justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Afiliaciones</h5></li>
-                        <li>Afiliados</li>
-                        <li>Convertirse en Afiliado</li>
+                        <li><NavLink to="/afiliados">Afiliados</NavLink></li>
+                        <li><NavLink to="/afiliados">Convertirse en Afiliado</NavLink></li>
                     </ul>
                 </nav>
                 <hr/>
