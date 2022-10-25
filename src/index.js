@@ -22,7 +22,7 @@ root.render(
       <Route path = "/nuevos+productos" element={<NuevosProd/>}/>
       <Route path = "/todos+los+productos" element={<TodosProd/>}/>
       <Route path = "/nosotros" element={<Nosotros/>}/>
-      <Route paht = "/clientes" element={<Clientes/>}/>
+      <Route path = "/cliente" element={<Clientes/>}/>
     </Routes>
   </Router>
 );

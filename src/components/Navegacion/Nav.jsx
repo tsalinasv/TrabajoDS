@@ -14,9 +14,8 @@ function Barra_nav() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="justify-content-end" style={{ width: "100%" }}>
             <Nav.Link href="/inicio">Inicio</Nav.Link>
-            <Nav.Link href="https://www.instagram.com/elboliche__/?hl=es-la">Instagram</Nav.Link>
             <NavDropdown title="Productos" id="basic-nav-dropdown">
               <NavDropdown.Item href="/promociones">Promociones</NavDropdown.Item>
               <NavDropdown.Item href="/nuevos+productos">Nuevos Productos</NavDropdown.Item>
@@ -24,7 +23,7 @@ function Barra_nav() {
               <NavDropdown.Item href="/todos+los+productos">Todos los Productos</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="/clientes">Clientes</Nav.Link>
+            <Nav.Link href="/cliente">Clientes</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

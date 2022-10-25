@@ -1,7 +1,7 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 import Logo from "./Fotos/Logo.png";
-import IG from "./Fotos/IG.png";
+import { instagram, twitter, linkedin, facebook} from "./Fotos";
 
 function Footer() {
   return (
@@ -9,35 +9,45 @@ function Footer() {
         <footer className = "text-white py-4 bg-dark">
             <div className="container">
                 <nav className="row">
-                    <Link to="/inicio" className='col-12 col-md-3 d-flex align-items-center justyfy-content-center'>
-                        <img src={Logo} className="mx-2" height="100"/>
-                    </Link>
-                    <ul className='col-12 col-md-3 list-unstyled'>
-                        <li style={{fontWeight: 'bold'}}>El Boliche</li>
-                        <li>
-                            <Link to ="/nosotros" class="text-reset">Nosotros</Link>
-                        </li>
+                    <div className='col-12 col-md-5 d-flex align-items-center justify-content-start'>
+                        <NavLink to="/inicio" ><img src={Logo} className="mx-2" height="150"/></NavLink>
+                        <h1>&nbsp;El&nbsp;</h1>
+                        <h1 style = {{color: "#a65460"}}> Boliche</h1>
+                    </div>
+                    <ul className='col-12 col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5}}>
+                        <li><h4 style={{fontWeight: 'bold'}}>Links Útiles</h4></li>
+                        <li>Contenido</li>
+                        <li>Cómo Funciona</li>
                         <li>Soporte</li>
-                        <li>Afiliados</li>
+                        <li>Ubícanos</li>
+                        <li>Terminos y servicios</li>
                     </ul>                    
-                    <ul className='col-12 col-md-3 list-unstyled'>
-                        <li style={{fontWeight: 'bold'}}>Extras</li>
+                    <ul className='col-12 col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5}}>
+                        <li><h4 style={{fontWeight: 'bold'}}>Comunidad</h4></li>
                         <li>Preguntas Frecuentes</li>
-                        <li>Experiencias de Clientes</li>
-                        <li>Recomendaciones</li>
+                        <li><NavLink to="/cliente">Clientes</NavLink></li>
+                        <li>Sugerencias</li>
+                        <li>Blog</li>
+                        <li>Newsletters</li>
                     </ul>
-                    <ul className='col-12 col-md-3 list-unstyled'>
-                        <li style={{fontWeight: 'bold'}}>Contacto</li>
-                        <li>+56 9 7883 0689</li>
-                        <li>+56 9 8276 9156</li>
+                    <ul className='col-12 col-md-2  justify-content-start list-unstyled' style = {{lineHeight: 2.5}}>
+                        <li><h4 style={{fontWeight: 'bold'}}>Afiliaciones</h4></li>
+                        <li>Afiliados</li>
+                        <li>Convertirse en Afiliado</li>
                     </ul>
                 </nav>
                 <hr/>
-                <nav className='center'>
-                    <img src={IG} height="30"/>
-                    <p>{" "}</p>
-                    <p style={{textAlign: "center"}} className='font-weight-bold mb2'>©Copyright. Todos los derechos reservados</p>
-                </nav>
+                <div className='d-flex'>
+                    <div className="justify-content-start " style={{ width: "85%"}}>
+                        Copyright © 2022 El Boliche. Todos los derechos reservados.
+                    </div>
+                    <div className="justify-content-end">
+                        <a href="https://www.instagram.com/elboliche__/?hl=es-la" target="_blank" rel="noreferrer"><img src={instagram} className="mx-2" height="20"/></a>
+                        <a href="#" target="_blank" rel="noreferrer"><img src={facebook} className="mx-2" height="20"/></a>
+                        <a href="#" target="_blank" rel="noreferrer"><img src={twitter} className="mx-2" height="20"/></a>
+                        <a href="#" target="_blank" rel="noreferrer"><img src={linkedin} className="mx-2" height="20"/></a>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>

@@ -6,6 +6,7 @@ import Footer from '../Navegacion/Footer';
 import ProdPop from '../Navegacion/ProdPop';
 
 
+
 function Inicio() {
   return (
     <div>
