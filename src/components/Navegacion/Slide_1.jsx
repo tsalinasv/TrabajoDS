@@ -13,6 +13,7 @@ function Slide_Peq_1() {
           style={{ height: 500}}
           src={Pad4}
           alt="First slide"
+          border-radius= "50px"
         />
       </Carousel.Item>
       <Carousel.Item>

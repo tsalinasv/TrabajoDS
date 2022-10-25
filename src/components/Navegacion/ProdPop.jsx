@@ -24,7 +24,7 @@ function ProdPop() {
             <Slide_Peq_2/>
             <hr/>
             <h3 style={{textAlign: "center"}}>Carcasas IPhone</h3>
-            <p style={{textAlign: "center"}}>Carcasa transparente con logotipo :) o completamente transparente</p>
+            <p style={{textAlign: "center"}}>Carcasa transparente con logotipo o completamente transparente</p>
             <p style={{textAlign: "center"}}>Modelos: IPhone 7/8/SE/Xr/Xs/X/11/12</p>
             <p style={{textAlign: "center"}}>Precios: $4.000/$5.000</p>
             <div class="col-md-12 text-center"><Boton/></div>
