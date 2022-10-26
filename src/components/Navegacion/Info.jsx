@@ -32,7 +32,7 @@ function info() {
             <h1 style={{fontWeight: 800, fontSize:43}}>Ubícanos</h1>
             <p style={{fontWeight: 500, fontSize:19, color:"grey"}}>Aquí podrás ver todas las comunas de Santiago que califican para entregas presenciales, y los puntos de encuentro en dichas comunas.</p>
             <div className='d-flex align-items-center justify-content-center' style={{marginTop: 50, marginBottom: 50}}>
-              <img src={Logo2} height="400" />
+              <img src={Logo2} height="400" style={{borderRadius:20}}/>
             </div>
             <h1 style={{fontWeight: 800, fontSize:43}}>Términos de Servicio</h1>
             <p style={{fontWeight: 500, fontSize:19, color:"grey", marginBottom:50}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>

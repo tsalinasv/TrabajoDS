@@ -27,8 +27,8 @@ function Ayuda() {
             <h2 style={{fontSize:30}}>¿Debo pagar algo por alguna devolución?</h2>
             <p>Si realiza una devolución presencial, No. Si desea realizar una devolución via courrier, usted deberá pagar el envío</p>
             <hr/>
-            <div style={{marginBottom:50, marginTop:50}}>
-              <h1 style={{fontWeight: 800, fontSize:43, marginBottom:50}}>¿Tienes otra Duda? ... Escríbenos.</h1>
+            <div style={{marginBottom:50, marginTop:70}}>
+              <h1 style={{fontWeight: 800, fontSize:43, marginBottom:30}}>¿Tienes otra Duda? ... Escríbenos.</h1>
               <Form src="https://fgjgvtjwbhivqlw.form.io/dudas" />
             </div>
         </div>

@@ -21,7 +21,7 @@ function Testimonios() {
             <nav className='row'>
                 <div className='col-md-7 d-flex align-items-center justify-content-start' style={{marginTop:50, marginBottom:50}}>
                     <nav className='row'>
-                        <div className='col-md-5 d-flex align-items-start justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginRight:20, marginTop:20}}>
+                        <div className='caja col-md-5 d-flex align-items-start justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginRight:20, marginTop:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
@@ -36,7 +36,7 @@ function Testimonios() {
                                 </div>
                             </nav>
                         </div>
-                        <div className='col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20}}>
+                        <div className='caja col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
@@ -51,7 +51,7 @@ function Testimonios() {
                                 </div>
                             </nav>                        
                         </div>
-                        <div className='col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20, marginRight:20}}>
+                        <div className='caja col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20, marginRight:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
@@ -66,7 +66,7 @@ function Testimonios() {
                                 </div>
                             </nav>                       
                         </div>
-                        <div className='col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20}}>
+                        <div className='caja col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
@@ -89,7 +89,7 @@ function Testimonios() {
             </nav>
             <div style={{marginTop:20, marginBottom:40}}>
                 <h1 style={{fontWeight: 800, fontSize:43}}>Inscríbtete a Nuestro Newsletter</h1>
-                <Button variant="danger" size="sm">Inscríbeme</Button>{' '}
+                <Form src="https://fgjgvtjwbhivqlw.form.io/newsletter" />
             </div>
         </div>
     </div>

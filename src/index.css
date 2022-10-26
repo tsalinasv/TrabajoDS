@@ -27,3 +27,7 @@ footer a{
 footer a:hover{
   color: #a65460;
  }
+
+ .caja:hover{
+  background-color: #faa7b372!important;
+ }
