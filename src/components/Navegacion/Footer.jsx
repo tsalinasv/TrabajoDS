@@ -20,8 +20,8 @@ function Footer() {
                         <li><NavLink to="/contenido">Contenido</NavLink></li>
                         <li><NavLink to="/contenido">Cómo Funciona</NavLink></li>
                         <li><NavLink to="/soporte">Soporte</NavLink></li>
-                        <li><NavLink to ="/nosotros">Ubícanos</NavLink></li>
-                        <li><NavLink to="/contenido">Terminos y servicios</NavLink></li>
+                        <li><NavLink to ="/contenido">Ubícanos</NavLink></li>
+                        <li><NavLink to="/contenido">Términos de Servicio</NavLink></li>
                     </ul>                    
                     <ul className='col-12 col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Comunidad</h5></li>
