@@ -10,7 +10,7 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500, borderRadius: 25}}
+          style={{ height: 500, borderRadius: 25, objectFit:"cover", objectPosition:"100% 0%"}}
           src={Pad4}
           alt="First slide"
         />
@@ -18,7 +18,7 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500, borderRadius: 25}}
+          style={{ height: 500, borderRadius: 25, objectFit:"cover", objectPosition:"100% 0%"}}
           src={Pad1}
           alt="Second slide"
         />
@@ -26,7 +26,7 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500, borderRadius: 25}}
+          style={{ height: 500, borderRadius: 25, objectFit:"cover", objectPosition:"100% 0%"}}
           src={Pad2}
           alt="Third slide"
         />
@@ -34,7 +34,7 @@ function Slide_Peq_1() {
       <Carousel.Item>
         <img
           className="d-block"
-          style={{ height: 500, borderRadius: 25}}
+          style={{ height: 500, borderRadius: 25, objectFit:"cover", objectPosition:"100% 0%"}}
           src={Pad3}
           alt="Fourth slide"
         />

@@ -36,12 +36,11 @@ function ProdPop() {
             <p style={{textAlign: "center"}}>Precios: $8.000/$9.000</p>
         </div>
         </div>
-        <div className="d-flex">
+        <div className="d-flex" style={{marginBottom:30}}>
           <div className="p-2" style={{width: "33%"}}><div class="col-md-12 text-center"><Boton/></div></div>
           <div className="p-2" style={{width: "33%"}}><div class="col-md-12 text-center"><Boton/></div></div>
           <div className="p-2" style={{width: "33%"}}><div class="col-md-12 text-center"><Boton/></div></div>
         </div>
-        <hr/>
     </div>
   )
 }

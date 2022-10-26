@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-import Logo from "./Fotos/Logo2.png";
+import Like from "./Fotos/Like.png";
+import { Form } from 'react-formio';
 
 function Testimonios() {
   return (
@@ -25,7 +26,7 @@ function Testimonios() {
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
-                                    <img src={Logo} height="25" style={{borderRadius:50}}/>
+                                    <img src={Like} height="40"/>
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
@@ -40,7 +41,7 @@ function Testimonios() {
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
-                                    <img src={Logo} height="25" style={{borderRadius:50}}/>
+                                    <img src={Like} height="40"/>
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
@@ -55,7 +56,7 @@ function Testimonios() {
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
-                                    <img src={Logo} height="25" style={{borderRadius:50}}/>
+                                    <img src={Like} height="40"/>
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
@@ -70,7 +71,7 @@ function Testimonios() {
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
                                 <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
-                                    <img src={Logo} height="25" style={{borderRadius:50}}/>
+                                    <img src={Like} height="40"/>
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
@@ -83,11 +84,13 @@ function Testimonios() {
                     </nav>
                 </div>
                 <div className='col-md-5 d-flex align-items-center justify-content-start'>
-                    <h3>Aqui va una encuesta de sugerencias</h3>
+                    <Form src="https://fgjgvtjwbhivqlw.form.io/sugerencias"/>
                 </div>
             </nav>
-            <h1>Inscríbtete a Nuestro Newsletter</h1>
-            <Button variant="danger" size="sm">Inscríbeme</Button>{' '}
+            <div style={{marginTop:20, marginBottom:40}}>
+                <h1 style={{fontWeight: 800, fontSize:43}}>Inscríbtete a Nuestro Newsletter</h1>
+                <Button variant="danger" size="sm">Inscríbeme</Button>{' '}
+            </div>
         </div>
     </div>
   )
