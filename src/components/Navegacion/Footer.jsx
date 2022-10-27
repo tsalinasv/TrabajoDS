@@ -17,7 +17,7 @@ function Footer() {
                     </div>
                     <ul className='col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Links Útiles</h5></li>
-                        <li><NavLink to="/contenido">Contenido</NavLink></li>
+                        <li><NavLink to="/contenido/#Ventas">Contenido</NavLink></li>
                         <li><NavLink to="/contenido">Cómo Funciona</NavLink></li>
                         <li><NavLink to="/soporte">Soporte</NavLink></li>
                         <li><NavLink to ="/contenido">Ubícanos</NavLink></li>
