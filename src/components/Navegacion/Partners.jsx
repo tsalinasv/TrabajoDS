@@ -9,7 +9,7 @@ function Partners() {
           <div className='row' style={{marginTop:50, marginBottom:50}}>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
               <div className='row'>
-                <h1 style={{fontWeight: 800, fontSize:43}}>Nuestros Socios</h1>
+                <h1 id="Partners" style={{fontWeight: 800, fontSize:43}}>Nuestros Socios</h1>
                 <p>imagenes con los logos de las empresas; shein, paypal, empresa de envios roxy, chilexpress, starken</p>
               </div>
             </div>
@@ -21,7 +21,7 @@ function Partners() {
             </div>
           </div>
           <div style={{marginBottom:50}}>
-            <h1 style={{fontWeight: 800, fontSize:43, marginBottom:30}}>Conviértete en Socio</h1>
+            <h1 id="NewPartner" style={{fontWeight: 800, fontSize:43, marginBottom:30}}>Conviértete en Socio</h1>
             <Form src="https://fgjgvtjwbhivqlw.form.io/socios" />
           </div>
         </div>

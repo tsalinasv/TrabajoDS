@@ -5,7 +5,7 @@ function Ayuda() {
   return (
     <div>
         <div className='container'>
-            <h1 style={{fontWeight: 800, fontSize:43, marginBottom:50, marginTop:50}}>Preguntas Frecuentes</h1>
+            <h1 id="Dudas" style={{fontWeight: 800, fontSize:43, marginBottom:50, marginTop:50}}>Preguntas Frecuentes</h1>
             <h2 style={{fontSize:30}}>¿Cómo puedo recibir mis productos?</h2>
             <p>Los productos pueden ser despachados a su domicilio o entregados de manera presencial</p>
             <hr/>

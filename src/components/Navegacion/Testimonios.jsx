@@ -9,7 +9,7 @@ function Testimonios() {
             <nav className='row' style={{marginTop:50}}>
                 <div className='col-md-6 d-flex align-items-center justify-content-start' >
                     <nav className='row'>
-                        <h1 style={{fontWeight: 800, fontSize:43}}>Que Dicen Nuestros</h1>
+                        <h1 id="Comentarios" style={{fontWeight: 800, fontSize:43}}>Que Dicen Nuestros</h1>
                         <h1 style={{fontWeight: 800, fontSize:43, marginTop: 1.8}}>Clientes de Nosotros</h1>
                     </nav>
                 </div>
@@ -82,12 +82,12 @@ function Testimonios() {
                         </div>
                     </nav>
                 </div>
-                <div className='col-md-4 d-flex align-items-center justify-content-center'>
+                <div id="Sugerencias" className='col-md-4 d-flex align-items-center justify-content-center'>
                     <Form src="https://fgjgvtjwbhivqlw.form.io/sugerencias"/>
                 </div>
             </nav>
             <div style={{marginTop:20, marginBottom:40}}>
-                <h1 style={{fontWeight: 800, fontSize:43}}>Inscríbtete a Nuestro Newsletter</h1>
+                <h1 id="Newsletter" style={{fontWeight: 800, fontSize:43}}>Inscríbtete a Nuestro Newsletter</h1>
                 <Form src="https://fgjgvtjwbhivqlw.form.io/newsletter" />
             </div>
         </div>

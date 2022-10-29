@@ -4,12 +4,14 @@ import FF from "./Fotos/FF.jpg";
 import MR from "./Fotos/MR.jpg";
 import Salud from "./Fotos/Salud.jpg";
 import Salud2 from "./Fotos/Salud2.png";
+import pymes from "./Fotos/pymes.jpg";
+import Pyme1 from "./Fotos/Pyme1.jpg";
 
 function Extra() {
   return (
     <div>
         <div className='container'>
-            <h1 className="d-flex align-items-center justify-content-center" style={{fontWeight: 300, fontSize:43, marginTop:100, marginBottom:100}}>Blog Moda, Belleza y Emprendimiento</h1>
+            <h1 id="Noticias" className="d-flex align-items-center justify-content-center" style={{fontWeight: 300, fontSize:43, marginTop:100, marginBottom:100}}>Blog Moda, Belleza y Emprendimiento</h1>
             <h2 className="d-flex align-items-center justify-content-start" style={{fontWeight:500, marginBottom:50, marginTop:50}}>Nuevas Noticias de Interés:</h2>
             <div className='row'>
                 <div className='col-md-7 d-flex align-items-center justify-content-start'>
@@ -49,7 +51,7 @@ function Extra() {
                 </div>
             </div>
             <NavLink href="https://verne.elpais.com/verne/2018/09/10/mexico/1536613366_326422.html" className='d-flex align-items-center justify-content-center' style={{color:"#a65460", fontWeight:600, marginBottom:50}}>https://verne.elpais.com/verne/2018/09/10/mexico/1536613366_326422.html</NavLink>
-            <h2 className='d-flex align-items-center justify-content-end' style={{fontWeight:500, marginBottom:50, marginTop:50}}>Tu Salud Primero:</h2>
+            <h2 className='d-flex align-items-center justify-content-end' style={{fontWeight:500, marginBottom:50, marginTop:100}}>Tu Salud Primero:</h2>
             <div className='row'>
                 <div className='col-md-5 d-flex align-items-center justify-content-center'>
                     <div className='row'>
@@ -74,7 +76,31 @@ function Extra() {
                 </div>
             </div>
             <NavLink href="https://www.ciperchile.cl/2021/11/08/salud-mental-en-chile-urgencias-desafios-y-silencios/" className='d-flex align-items-center justify-content-center' style={{color:"#a65460", fontWeight:600, marginBottom:50}}>https://www.ciperchile.cl/2021/11/08/salud-mental-en-chile-urgencias-desafios-y-silencios/</NavLink>
-            <h2 className="d-flex align-items-center justify-content-center"style={{fontWeight:500, marginBottom:50, marginTop:50}}>El Poder de las "Pymes"</h2>  
+            <h2 className="d-flex align-items-center justify-content-center"style={{fontWeight:500, marginBottom:50, marginTop:100}}>El Poder de las "Pymes"</h2>  
+            <h3 style={{fontWeight: 300, fontSize:35, marginBottom:50}}>Las pymes son el sostén de la economía</h3>
+            <p align="justify">
+            Las pequeñas y medianas empresas son el motor de la economía, es una premisa que se ha repetido por años, pero los números recientes reflejan que no del todo. Es más bien un sistema donde se benefician unos de otros. Las empresas de 
+            menor tamaño generan la mayor cantidad de empleo: sí, pero los salarios son más bajos y aportan menos al PIB. De acuerdo con cifras del Ministerio de Economía, en 2019 las pymes aportaron el 17% del Producto Interno Bruto (PIB), mientras 
+            que las grandes el 83%. Asimismo, representan 13,1% del total de las ventas del país, en tanto que las grandes casi 87%.
+            </p>
+            <p align = "justify">
+            En materia de empleo, según cifras de Hermann Consultores, el 53,3% lo entregan las pymes. La remuneración nominal promedio de los trabajadores fue de $574.497 en las microempresas, $725.959 en las pequeñas empresas, $860.843 en las medianas
+             empresas y $936.503 en las empresas grandes.
+            </p>
+            <p align = "justify">
+            El uso de comercio electrónico (compras y ventas) se relaciona con el tamaño de la empresa, siendo mayor en las grandes y disminuyendo a medida que se reduce el tamaño de la firma. El 20% de las microempresas realizó comercio electrónico, 
+            en comparación con 37% de las empresas grandes. Otro aspecto que resalta Jorge Hermann, de Hermann Consultores, es que tanto en Chile como en el resto de los países de la Ocde, la productividad del trabajo es mayor en las empresas grandes 
+            y medianas que en las empresas pequeñas y micro. “Lo anterior, dado que las primeras son más intensivas en capital frente a las pequeñas, lo que refleja la necesidad de buscar alternativas que permitan a las pymes mayor posibilidad de competir” ...
+            </p>
+            <NavLink href="https://www.latercera.com/pulso/noticia/las-pymes-son-el-sosten-de-la-economia/SYHT7OR6SVH7DIYQP4OIKP7NGU/" className='d-flex align-items-center justify-content-center' style={{color:"#a65460", fontWeight:600, marginBottom:50}}>https://www.latercera.com/pulso/noticia/las-pymes-son-el-sosten-de-la-economia/SYHT7OR6SVH7DIYQP4OIKP7NGU/</NavLink>
+            <div className='row' style={{marginTop:50, marginBottom:50}}>
+                <div className='col-md-6 d-flex align-items-center justify-content-center'>
+                    <img src={pymes} style={{borderRadius:25, marginBottom:50}} height="300"/>
+                </div>
+                <div className='col-md-6 d-flex align-items-center justify-content-center'>
+                    <img src={Pyme1} style={{borderRadius:25, marginBottom:50}} height="300"/>
+                </div>
+            </div>
         </div>
     </div>
   )
