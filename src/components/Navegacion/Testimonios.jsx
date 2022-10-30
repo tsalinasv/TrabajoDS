@@ -29,7 +29,7 @@ function Testimonios() {
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
-                                        <p style={{fontWeight:800, fontSize:17, marginBottom:1, marginTop:15}}>Andrea Venegas</p>
+                                        <p style={{fontWeight:800, fontSize:17, marginBottom:1, marginTop:15}}>Sofía Barriga</p>
                                         <p style={{fontWeight:500, fontSize:12, marginTop:1}}>Clienta</p>
                                     </nav>
                                 </div>
@@ -38,7 +38,7 @@ function Testimonios() {
                         <div className='caja col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
-                                <p style={{fontWeight:500}}>"Comparar en mi propia tienda me permite tener la misma experiencia que cualquier clienta y como siempre, nuestro staff entrega un servicio increible."</p>
+                                <p style={{fontWeight:500}}>"Comprar en mi propia tienda me permite tener la misma experiencia que cualquier clienta y como siempre, nuestro staff entrega un servicio increible."</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
                                     <img src={Like} height="40"/>
                                 </div>
@@ -53,14 +53,14 @@ function Testimonios() {
                         <div className='caja col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20, marginRight:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
-                                <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+                                <p style={{fontWeight:500}}>"Quedé fascinada con la calidad de los productos y del servico, me equivoqué en una talla y me lo cambiaron sin ningún inconveniente. Recomendadísimo!"</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
                                     <img src={Like} height="40"/>
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
-                                        <p style={{fontWeight:800, fontSize:17, marginBottom:1, marginTop:15}}>Rocío Benavides</p>
-                                        <p style={{fontWeight:500, fontSize:12, marginTop:1}}>Dueña Fundadora</p>
+                                        <p style={{fontWeight:800, fontSize:17, marginBottom:1, marginTop:15}}>Javiera Araneda</p>
+                                        <p style={{fontWeight:500, fontSize:12, marginTop:1}}>Clienta</p>
                                     </nav>
                                 </div>
                             </nav>                       
@@ -68,14 +68,14 @@ function Testimonios() {
                         <div className='caja col-md-5 d-flex align-items-center justify-content-start' style={{backgroundColor:"#a6546043", borderRadius:20, marginTop:20}}>
                             <nav className='row' style={{margin:10}}>
                                 <h1 style={{fontWeight: 500, fontSize:85, color:"#a65460"}}>"</h1>
-                                <p style={{fontWeight:500}}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+                                <p style={{fontWeight:500}}>"Súper seguro y confiable! Contestaron todas mis dudas y pude comprar justo lo que necesitaba. Y lo mejor de todo es que me llegó en unos pocos días."</p>
                                 <div className='col-md-3 d-flex align-items-center justify-content-start'>
                                     <img src={Like} height="40"/>
                                 </div>
                                 <div className='col-md-9 d-flex align-items-center justify-content-start'>
                                     <nav className='row'>
-                                        <p style={{fontWeight:800, fontSize:17, marginBottom:1, marginTop:15}}>Rocío Benavides</p>
-                                        <p style={{fontWeight:500, fontSize:12, marginTop:1}}>Dueña Fundadora</p>
+                                        <p style={{fontWeight:800, fontSize:17, marginBottom:1, marginTop:15}}>Antonia Aparicio</p>
+                                        <p style={{fontWeight:500, fontSize:12, marginTop:1}}>Clienta</p>
                                     </nav>
                                 </div>
                             </nav>                      

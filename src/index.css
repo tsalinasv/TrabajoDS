@@ -1,4 +1,5 @@
 
+
 body, 
 html {
   margin: 0;
@@ -28,6 +29,7 @@ footer a:hover{
   color: #a65460;
  }
 
- .caja:hover{
+.caja:hover{
   background-color: #faa7b372!important;
- }
+}
+

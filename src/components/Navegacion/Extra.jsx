@@ -17,7 +17,7 @@ function Extra() {
                 <div className='col-md-7 d-flex align-items-center justify-content-start'>
                     <div className='row'>
                         <h3 style={{fontWeight: 300, fontSize:35, marginBottom:50}}>Fast Fashion: El corazón de la contaminación textil</h3>
-                        <p align="justify">
+                        <p align="justify" style={{fontWeight: 500, fontSize:19, color:"grey"}}>
                             Se le llama moda rápida o fast fashion al modelo de negocios que consiste en la producción masiva de prendas “desechables”, que genera un grave problema de contaminación. 
                             Por ello, recientemente se anunció la incorporación de estos residuos en la ley de Reciclaje y Responsabilidad Extendida del Productor (REP). Sobre esta situación se refirieron 
                             varios actores de esta cadena, Beatriz O`Brien, socióloga especializada en sustentabilidad textil y coordinadora nacional de la fundación internacional Fashion Revolution; 
@@ -36,7 +36,7 @@ function Extra() {
                 <div className='col-md-7 d-flex align-items-center justify-content-start'>
                     <div className='row'>
                         <h3 style={{fontWeight: 300, fontSize:35, marginBottom:50}}>La moda ‘retro’ vuelve para evitar el acoso a las mujeres, según un diario mexicano</h3>
-                        <p align="justify">
+                        <p align="justify" style={{fontWeight: 500, fontSize:19, color:"grey"}}>
                         El suplemento de moda del diario mexicano Reforma ha suscitado varias críticas por su artículo principal publicado este fin de semana. “El contexto de agresión o violencia contra las mujeres 
                         llevó a las grandes firmas a apostar por prendas sobrias pero de ninguna manera aburridas o sin personalidad”, se lee en el llamado en portada de la edición de este sábado. Usuarios en Twitter 
                         y Facebook retomaron la publicación acompañándola de críticas por el enfoque de esta casa editorial. Un par de fotografías en Facebook del ejemplar impreso se han compartido más de 850 veces 
@@ -62,7 +62,7 @@ function Extra() {
                 <div className='col-md-7 d-flex align-items-center justify-content-end'>
                     <div className='row'>
                         <h3 style={{fontWeight: 300, fontSize:35, marginBottom:50}}>La moda ‘retro’ vuelve para evitar el acoso a las mujeres, según un diario mexicano</h3>
-                        <p align="justify">
+                        <p align="justify" style={{fontWeight: 500, fontSize:19, color:"grey"}}>
                         Es grave la brecha existente en nuestro país entre las altas prevalencias de trastornos mentales entre la población —al alza durante la pandemia de COVID-19— y el escaso presupuesto público destinado a su 
                         tratamiento y prevención. Frente a la proximidad de las elecciones presidenciales «y la oportunidad que brindan los cambios para identificar necesidades, repensar prioridades y definir posibles líneas de acción»
                         , lo/as especialistas de esta columna para CIPER revisan la evidencia disponible al respecto hoy en Chile y sugieren líneas de mejora. Los trastornos mentales en Chile arrojan cifras alarmantes. Diversos estudios 
@@ -78,16 +78,16 @@ function Extra() {
             <NavLink href="https://www.ciperchile.cl/2021/11/08/salud-mental-en-chile-urgencias-desafios-y-silencios/" className='d-flex align-items-center justify-content-center' style={{color:"#a65460", fontWeight:600, marginBottom:50}}>https://www.ciperchile.cl/2021/11/08/salud-mental-en-chile-urgencias-desafios-y-silencios/</NavLink>
             <h2 className="d-flex align-items-center justify-content-center"style={{fontWeight:500, marginBottom:50, marginTop:100}}>El Poder de las "Pymes"</h2>  
             <h3 style={{fontWeight: 300, fontSize:35, marginBottom:50}}>Las pymes son el sostén de la economía</h3>
-            <p align="justify">
+            <p align="justify" style={{fontWeight: 500, fontSize:19, color:"grey"}}>
             Las pequeñas y medianas empresas son el motor de la economía, es una premisa que se ha repetido por años, pero los números recientes reflejan que no del todo. Es más bien un sistema donde se benefician unos de otros. Las empresas de 
             menor tamaño generan la mayor cantidad de empleo: sí, pero los salarios son más bajos y aportan menos al PIB. De acuerdo con cifras del Ministerio de Economía, en 2019 las pymes aportaron el 17% del Producto Interno Bruto (PIB), mientras 
             que las grandes el 83%. Asimismo, representan 13,1% del total de las ventas del país, en tanto que las grandes casi 87%.
             </p>
-            <p align = "justify">
+            <p align = "justify" style={{fontWeight: 500, fontSize:19, color:"grey"}}>
             En materia de empleo, según cifras de Hermann Consultores, el 53,3% lo entregan las pymes. La remuneración nominal promedio de los trabajadores fue de $574.497 en las microempresas, $725.959 en las pequeñas empresas, $860.843 en las medianas
              empresas y $936.503 en las empresas grandes.
             </p>
-            <p align = "justify">
+            <p align = "justify" style={{fontWeight: 500, fontSize:19, color:"grey"}}>
             El uso de comercio electrónico (compras y ventas) se relaciona con el tamaño de la empresa, siendo mayor en las grandes y disminuyendo a medida que se reduce el tamaño de la firma. El 20% de las microempresas realizó comercio electrónico, 
             en comparación con 37% de las empresas grandes. Otro aspecto que resalta Jorge Hermann, de Hermann Consultores, es que tanto en Chile como en el resto de los países de la Ocde, la productividad del trabajo es mayor en las empresas grandes 
             y medianas que en las empresas pequeñas y micro. “Lo anterior, dado que las primeras son más intensivas en capital frente a las pequeñas, lo que refleja la necesidad de buscar alternativas que permitan a las pymes mayor posibilidad de competir” ...
