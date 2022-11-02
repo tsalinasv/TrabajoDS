@@ -11,6 +11,7 @@ import Cintillo1 from "./Fotos/Cintillo1.png"
 import Cintillo2 from "./Fotos/Cintillo2.png"
 import Rulos1 from "./Fotos/Rulos1.png"
 import Rulos2 from "./Fotos/Rulos2.png"
+import { Button } from 'react-bootstrap';
 
 function TodoProd() {
   return (
@@ -33,7 +34,7 @@ function TodoProd() {
                   <hr/>
                   <li>Pack 3: $6.000</li>
                   <li>Pack 2: $4.800</li>
-                  <li style={{marginTop:25}}><Boton/></li>
+                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 3</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 2</Button></li>
                 </ul>
               </div>
             </div>
@@ -53,7 +54,7 @@ function TodoProd() {
                   <hr/>
                   <li>Lentes Cuadrados: $16.200 (2u)</li>
                   <li>Lentes Alargados: $14.400 (2u)</li>
-                  <li style={{marginTop:25}}><Boton/></li>
+                  <li style={{marginTop:25}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></li>
                 </ul>
               </div>
             </div>            
