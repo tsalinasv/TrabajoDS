@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "./Fotos/Logo.png";
+import Carrito from "./Fotos/Carrito.png";
 
 function Barra_nav() {
   return (
@@ -24,6 +25,7 @@ function Barra_nav() {
             </NavDropdown>
             <Nav.Link href="/nosotros">Nosotros</Nav.Link>
             <Nav.Link href="/cliente">Clientes</Nav.Link>
+            <Nav.Link href="/carrito"><img src={Carrito} height="16"/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

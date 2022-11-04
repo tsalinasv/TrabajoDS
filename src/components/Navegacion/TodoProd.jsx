@@ -13,6 +13,7 @@ import Rulos1 from "./Fotos/Rulos1.png"
 import Rulos2 from "./Fotos/Rulos2.png"
 import { Button } from 'react-bootstrap';
 
+
 function TodoProd() {
   return (
     <div>
@@ -54,7 +55,7 @@ function TodoProd() {
                   <hr/>
                   <li>Lentes Cuadrados: $16.200 (2u)</li>
                   <li>Lentes Alargados: $14.400 (2u)</li>
-                  <li style={{marginTop:25}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></li>
+                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></li>
                 </ul>
               </div>
             </div>            
@@ -76,7 +77,7 @@ function TodoProd() {
                   <hr/>
                   <li>Carcasa Logotipo: $4.500</li>
                   <li>Carcasa Transparente: $3.600</li>
-                  <li style={{marginTop:25}}><Boton/></li>
+                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Logo.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Transp.</Button></li>
                 </ul>
               </div>
             </div>
@@ -110,7 +111,7 @@ function TodoProd() {
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>
                 <div className="caja" style={{backgroundColor:"#a6546043", borderRadius:25}}>
-                  <p align="center"style={{fontWeight:700, marginTop:10, marginBottom:10, color:"#a65460"}}>Quedan Pocas Uidades, No te Quedes Sin el Tuyo</p>
+                  <p align="center"style={{fontWeight:700, marginTop:10, marginBottom:10, color:"#a65460"}}>Quedan Pocas Unidades, No te Quedes Sin el Tuyo</p>
                 </div>
                 <ul className='list-unstyled' style={{marginTop:25, fontWeight:500, color:"grey"}}>
                   <li style={{fontWeight:600, color:"black"}}>Cintillos Skincare</li>
@@ -130,7 +131,7 @@ function TodoProd() {
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>
                 <div className="caja" style={{backgroundColor:"#a6546043", borderRadius:25}}>
-                  <p align="center"style={{fontWeight:700, marginTop:10, marginBottom:10, color:"#a65460"}}>Quedan Pocas Uidades, No te Quedes Sin el Tuyo</p>
+                  <p align="center"style={{fontWeight:700, marginTop:10, marginBottom:10, color:"#a65460"}}>Quedan Pocas Unidades, No te Quedes Sin el Tuyo</p>
                 </div>
                 <ul className='list-unstyled' style={{marginTop:25, fontWeight:500, color:"grey"}}>
                   <li style={{fontWeight:600, color:"black"}}>Ondas Sin Calor</li>
@@ -142,6 +143,30 @@ function TodoProd() {
                 </ul>
               </div>
             </div>            
+          </div>
+        </div>
+        <div className='row' style={{marginTop:50, marginBottom:50}}>
+          <div className='col-md-6 d-flex align-items-start justify-content-start'>
+            <div className='col-md-6 d-flex align-items-start justify-content-start'>
+              <img src={Lentes2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+            </div>
+            <div className='col-md-6 d-flex align-items-center justify-content-start'>
+              <div className='row'>
+                <div className="caja" style={{backgroundColor:"#a6546043", borderRadius:25}}>
+                  <p align="center"style={{fontWeight:700, marginTop:10, marginBottom:10, color:"#a65460"}}>Quedan Pocas Unidades, No te Quedes Sin el Tuyo</p>
+                </div>
+                <ul className='list-unstyled' style={{marginTop:25, fontWeight:500, color:"grey"}}>
+                  <li style={{fontWeight:600, color:"black"}}>Lentes de Sol</li>
+                  <li align="justify">En 2 variedades, cuadrados color negro y también alargados color negro.</li>
+                  <hr/>
+                  <li>Lentes Cuadrados: $9.000</li>
+                  <li>Lentes Alargados: $8.000</li>
+                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className='col-md-6 d-flex align-items-start justify-content-start'>          
           </div>
         </div>
         <div className='caja d-flex align-items-center justify-content-center' style={{marginTop:50, color:"#a65460", backgroundColor:"#a6546043", borderRadius:25, marginBottom:100}}>

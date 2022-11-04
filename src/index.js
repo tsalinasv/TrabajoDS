@@ -14,6 +14,7 @@ import Soporte from './components/Paginas/Soporte';
 import Blog from './components/Paginas/Blog';
 import Afiliados from './components/Paginas/Afiliados';
 import Contenido from './components/Paginas/Contenido';
+import Carrito from './components/Paginas/Carrito';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -31,6 +32,7 @@ root.render(
       <Route path = "/blog" element={<Blog/>}/>
       <Route path = "/afiliados" element={<Afiliados/>}/>
       <Route path = "/contenido" element={<Contenido/>}/>
+      <Route path = "/carrito" element={<Carrito/>}/>
     </Routes>
   </Router>
 );
