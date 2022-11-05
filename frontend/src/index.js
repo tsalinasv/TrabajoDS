@@ -17,32 +17,40 @@ import Contenido from './components/Paginas/Contenido';
 import Carrito from './components/Paginas/Carrito';
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
-import productReducer from "./features/productsSlice";
+import productReducer, { productsFetch } from "./features/productsSlice";
+import { productsApi } from './features/productsApi';
 
 const store = configureStore({
   reducer:{
     products: productReducer,
-  }
-})
+    [productsApi.reducerPath]: productsApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(productsApi.middleware),
+});
+
+store.dispatch(productsFetch());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <Routes>
-      <Route path ="/" element={<App/>}/>
-      <Route path = "/inicio" element = {<Inicio/>}/>
-      <Route path = "/promociones" element={<Promociones/>}/>
-      <Route path = "/nuevos+productos" element={<NuevosProd/>}/>
-      <Route path = "/todos+los+productos" element={<TodosProd/>}/>
-      <Route path = "/nosotros" element={<Nosotros/>}/>
-      <Route path = "/cliente" element={<Clientes/>}/>
-      <Route path = "/soporte" element={<Soporte/>}/>
-      <Route path = "/blog" element={<Blog/>}/>
-      <Route path = "/afiliados" element={<Afiliados/>}/>
-      <Route path = "/contenido" element={<Contenido/>}/>
-      <Route path = "/carrito" element={<Carrito/>}/>
-    </Routes>
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <Routes>
+        <Route path ="/" element={<App/>}/>
+        <Route path = "/inicio" element = {<Inicio/>}/>
+        <Route path = "/promociones" element={<Promociones/>}/>
+        <Route path = "/nuevos+productos" element={<NuevosProd/>}/>
+        <Route path = "/todos+los+productos" element={<TodosProd/>}/>
+        <Route path = "/nosotros" element={<Nosotros/>}/>
+        <Route path = "/cliente" element={<Clientes/>}/>
+        <Route path = "/soporte" element={<Soporte/>}/>
+        <Route path = "/blog" element={<Blog/>}/>
+        <Route path = "/afiliados" element={<Afiliados/>}/>
+        <Route path = "/contenido" element={<Contenido/>}/>
+        <Route path = "/carrito" element={<Carrito/>}/>
+      </Routes>
+    </Router>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
