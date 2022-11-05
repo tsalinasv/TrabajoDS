@@ -15,7 +15,15 @@ import Blog from './components/Paginas/Blog';
 import Afiliados from './components/Paginas/Afiliados';
 import Contenido from './components/Paginas/Contenido';
 import Carrito from './components/Paginas/Carrito';
+import {configureStore} from "@reduxjs/toolkit";
+import {Provider} from "react-redux";
+import productReducer from "./features/productsSlice";
 
+const store = configureStore({
+  reducer:{
+    products: productReducer,
+  }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
