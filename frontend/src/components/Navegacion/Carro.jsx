@@ -1,9 +1,23 @@
 import React from 'react'
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 import {HashLink as NavLink} from "react-router-hash-link"
+import { removeFromCart, decreaseCart, addToCart, clearCart} from '../../features/cartSlice';
 
 function Carro() {
   const cart = useSelector((state) => state.cart)
+  const dispatch = useDispatch();
+  const handleRemoveFromCart = (cartItem) =>{
+    dispatch(removeFromCart(cartItem));
+  };
+  const handleDecreaseCart = (cartItem) =>{
+    dispatch(decreaseCart(cartItem));
+  };
+  const handleIncreaseCart = (cartItem) =>{
+    dispatch(addToCart(cartItem));
+  };
+  const handleClearCart = (cartItem) =>{
+    dispatch(clearCart(cartItem));
+  };
   return (
     <carro>
       <div className='container'>
@@ -48,14 +62,14 @@ function Carro() {
                     <div>
                       <h3 style={{marginLeft:5, fontSize:22}}>{cartItem.name}</h3>
                       <p style={{marginLeft:5, fontWeight:400, color:'grey'}}>{cartItem.desc}</p>
-                      <button>Eliminar</button>
+                      <button onClick={()=> handleRemoveFromCart(cartItem)}>Eliminar</button>
                     </div>
                   </div>
                   <div className='cart-product-price' style={{marginLeft:19}}>${cartItem.price}</div>
                   <div className='cart-product-quantity'>
-                    <button>-</button>
+                    <button onClick={()=> handleDecreaseCart(cartItem)}>-</button>
                     <div calssName="count d-flex align-items-center" >{cartItem.cartQuantity}</div>
-                    <button>+</button>
+                    <button onClick={()=> handleIncreaseCart(cartItem)}>+</button>
                   </div>
                   <div className='cart-product-total-price'>
                     ${cartItem.price * cartItem.cartQuantity}
@@ -64,7 +78,7 @@ function Carro() {
               ))}
             </div>
             <div className="cart-summary">
-              <button className="clear-btn">
+              <button className="clear-btn" onClick={()=>handleClearCart()}>
                 Limpiar Carrito
               </button>
               <div className="cart-checkout">
