@@ -2,7 +2,8 @@ import React from 'react'
 import {useSelector, useDispatch} from "react-redux";
 import {HashLink as NavLink} from "react-router-hash-link"
 import { removeFromCart, decreaseCart, addToCart, clearCart, getTotals} from '../../features/cartSlice';
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import PayPal from './PayPal';
 
 function Carro() {
   const cart = useSelector((state) => state.cart)
@@ -23,6 +24,8 @@ function Carro() {
   const handleClearCart = (cartItem) =>{
     dispatch(clearCart(cartItem));
   };
+
+  const [checkout, setCheckOut] = useState(false);
 
   useEffect(() => {
     dispatch(getTotals());
@@ -97,7 +100,11 @@ function Carro() {
                   <span className="amount">${cart.cartTotalAmount}</span>
                 </div>
                 <p style={{fontWeight:400, color:'grey'}}>Impuestos y envío calculados en checkout</p>
-                <button>Check out</button>
+                {checkout ? (
+                  <PayPal/>
+                ) : (
+                <button onClick={()=>setCheckOut(true)}>Check out</button>
+                )}
                 <div className="continue-shopping">
                   <NavLink to="/todos+los+productos" style={{marginBottom:50, fontWeight:500}}>
                     <svg
