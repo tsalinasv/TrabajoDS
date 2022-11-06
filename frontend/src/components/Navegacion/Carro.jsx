@@ -1,23 +1,33 @@
 import React from 'react'
 import {useSelector, useDispatch} from "react-redux";
 import {HashLink as NavLink} from "react-router-hash-link"
-import { removeFromCart, decreaseCart, addToCart, clearCart} from '../../features/cartSlice';
+import { removeFromCart, decreaseCart, addToCart, clearCart, getTotals} from '../../features/cartSlice';
+import {useEffect} from "react";
 
 function Carro() {
   const cart = useSelector((state) => state.cart)
   const dispatch = useDispatch();
+
   const handleRemoveFromCart = (cartItem) =>{
     dispatch(removeFromCart(cartItem));
   };
+
   const handleDecreaseCart = (cartItem) =>{
     dispatch(decreaseCart(cartItem));
   };
+
   const handleIncreaseCart = (cartItem) =>{
     dispatch(addToCart(cartItem));
   };
+
   const handleClearCart = (cartItem) =>{
     dispatch(clearCart(cartItem));
   };
+
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [cart, dispatch]);
+
   return (
     <carro>
       <div className='container'>
