@@ -11,13 +11,21 @@ import Cintillo1 from "./Fotos/Cintillo1.png"
 import Cintillo2 from "./Fotos/Cintillo2.png"
 import Rulos1 from "./Fotos/Rulos1.png"
 import Rulos2 from "./Fotos/Rulos2.png"
-import { Button } from 'react-bootstrap';
-
+import { Button } from 'react-bootstrap'; 
+import { useDispatch } from 'react-redux';
+import { useGetAllProductsQuery } from '../../features/productsApi';
+import { addToCart } from '../../features/cartSlice';
 
 function TodoProd() {
+  const {data} = useGetAllProductsQuery();
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) =>{
+    dispatch(addToCart(product));
+  };
   return (
     <div>
-      <div className='container'>
+      <div className='container products'>
         <h1 style={{fontWeight: 800, fontSize:43, marginBottom:50, marginTop:50}}>Todos Nuestros Productos</h1>
         <div className='row' style={{marginTop:50, marginBottom:50}}>
           <div className='col-md-6 d-flex align-items-start justify-content-start'>
@@ -35,7 +43,15 @@ function TodoProd() {
                   <hr/>
                   <li>Pack 3: $6.000</li>
                   <li>Pack 2: $4.800</li>
-                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 3</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 2</Button></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 3</Button></div>))}
+                    {' '}
+                    {data?.map((product) => (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 2</Button></div>))}
+                  </li>
                 </ul>
               </div>
             </div>
