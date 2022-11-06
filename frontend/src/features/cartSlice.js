@@ -15,12 +15,12 @@ const cartSlice = createSlice({
 
             const itemIndex = state.cartItems.findIndex(item=>item.id === action.payload.id);
             if(itemIndex>=0){
-                state.cartItems[itemIndex].cardQauntity += 1
+                state.cartItems[itemIndex].cartQuantity += 1
                 toast.info("Aumento en cantidad de producto", {
                     position: "bottom-left",
                 });
             } else {
-                const tempProduct={ ...action.payload, cardQauntity: 1}
+                const tempProduct={ ...action.payload, cartQuantity: 1}
                 state.cartItems.push(tempProduct);
                 toast.success("Nuevo producto agregado", {
                     position: "bottom-left",
