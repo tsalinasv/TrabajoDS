@@ -71,14 +71,14 @@ function Carro() {
               {cart.cartItems?.map(cartItem => (
                 <div className='cart-item' key={cartItem.id}>
                   <div className='cart-product'>
-                    <img src={cartItem.image} alt={cartItem.name}/>
+                    <img border="2px" src={cartItem.image} alt={cartItem.name} style={{borderRadius:15, objectFit:"cover"}}/>
                     <div>
                       <h3 style={{marginLeft:5, fontSize:22}}>{cartItem.name}</h3>
                       <p style={{marginLeft:5, fontWeight:400, color:'grey'}}>{cartItem.desc}</p>
                       <button onClick={()=> handleRemoveFromCart(cartItem)}>Eliminar</button>
                     </div>
                   </div>
-                  <div className='cart-product-price' style={{marginLeft:19}}>${cartItem.price}</div>
+                  <div className='cart-product-price' style={{marginLeft:19, fontWeight:500}}>${cartItem.price}</div>
                   <div className='cart-product-quantity'>
                     <button onClick={()=> handleDecreaseCart(cartItem)}>-</button>
                     <div calssName="count d-flex align-items-center" >{cartItem.cartQuantity}</div>
