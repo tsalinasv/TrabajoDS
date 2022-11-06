@@ -28,6 +28,13 @@ footer a{
 footer a:hover{
   color: #a65460;
  }
+carro a{
+  color: grey;
+  text-decoration: none;
+ }
+carro a:hover{
+  color: #a65460;
+ }
 
 .caja:hover{
   background-color: #faa7b372!important;
