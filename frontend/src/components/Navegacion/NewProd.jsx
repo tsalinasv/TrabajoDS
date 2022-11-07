@@ -1,8 +1,18 @@
 import React from 'react'
 import Boton from './Boton';
 import Bikini from "./Fotos/Bikini.png"
+import { Button } from 'react-bootstrap'; 
+import { useDispatch } from 'react-redux';
+import { useGetAllProductsQuery } from '../../features/productsApi';
+import { addToCart } from '../../features/cartSlice';
 
 function NewProd() {
+  const {data} = useGetAllProductsQuery();
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) =>{
+    dispatch(addToCart(product));
+  };
   return (
     <div>
         <div className='container'>
@@ -23,7 +33,14 @@ function NewProd() {
                     <hr/>
                     <li>Tallas Disponibles: M</li>
                     <li>Valor: $10.000</li>
-                    <li style={{marginTop:25}}><Boton/></li>
+                    <li style={{marginTop:20}}>
+                      {data?.map((product) => {
+                        if(product.id == 7)
+                      return (
+                      <div key={product.id} className="product">
+                      <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar a Carrito</Button></div>)
+                      })}
+                    </li>
                   </ul>
                 </div>
               </div>

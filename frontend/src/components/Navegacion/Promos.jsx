@@ -1,13 +1,22 @@
 import React from 'react'
-import Boton from './Boton';
 import Pad1 from "./Fotos/Pad1.jpg"
 import Pad2 from "./Fotos/Pad2.jpg"
 import Carcasa1 from "./Fotos/Carcasa1.jpeg"
 import Carcasa2 from "./Fotos/Carcasa2.jpeg"
 import Lentes1 from "./Fotos/Lentes1.jpeg"
 import Lentes2 from "./Fotos/Lentes2.jpeg"
+import { Button } from 'react-bootstrap'; 
+import { useDispatch } from 'react-redux';
+import { useGetAllProductsQuery } from '../../features/productsApi';
+import { addToCart } from '../../features/cartSlice';
 
 function Promos() {
+  const {data} = useGetAllProductsQuery();
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) =>{
+    dispatch(addToCart(product));
+  };
   return (
     <div>
         <div className='container'>
@@ -28,7 +37,21 @@ function Promos() {
                     <hr/>
                     <li>Pack 3: $6.000</li>
                     <li>Pack 2: $4.800</li>
-                    <li style={{marginTop:25}}><Boton/></li>
+                    <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 1)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 3</Button></div>)
+                    })}
+                    {' '}
+                    {data?.map((product) => {
+                      if(product.id == 2)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 2</Button></div>)
+                    })}
+                  </li>
                   </ul>
                 </div>
               </div>
@@ -48,7 +71,21 @@ function Promos() {
                     <hr/>
                     <li>Lentes Cuadrados: $16.200 (2u)</li>
                     <li>Lentes Alargados: $14.400 (2u)</li>
-                    <li style={{marginTop:25}}><Boton/></li>
+                    <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 3)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button></div>)
+                    })}
+                    {' '}
+                    {data?.map((product) => {
+                      if(product.id == 4)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></div>)
+                    })}
+                  </li>
                   </ul>
                 </div>
               </div>            
@@ -70,7 +107,21 @@ function Promos() {
                     <hr/>
                     <li>Carcasa Logotipo: $4.500</li>
                     <li>Carcasa Transparente: $3.600</li>
-                    <li style={{marginTop:25}}><Boton/></li>
+                    <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 5)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Logo.</Button></div>)
+                    })}
+                    {' '}
+                    {data?.map((product) => {
+                      if(product.id == 6)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Transp..</Button></div>)
+                    })}
+                  </li>
                   </ul>
                 </div>
               </div>
