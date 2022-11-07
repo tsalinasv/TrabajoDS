@@ -45,7 +45,7 @@ function Footer() {
                     <div className="justify-content-end" >
                         <a href="https://www.instagram.com/elboliche__/?hl=es-la" target="_blank" rel="noreferrer"><img src={instagram} className="mx-2" height="20"/></a>
                         <a href="#" target="_blank" rel="noreferrer"><img src={facebook} className="mx-2" height="20"/></a>
-                        <a href="#" target="_blank" rel="noreferrer"><img src={twitter} className="mx-2" height="20"/></a>
+                        <a href="https://twitter.com/ElBoliche_cl" target="_blank" rel="noreferrer"><img src={twitter} className="mx-2" height="20"/></a>
                         <a href="#" target="_blank" rel="noreferrer"><img src={linkedin} className="mx-2" height="20"/></a>
                     </div>
                 </div>
