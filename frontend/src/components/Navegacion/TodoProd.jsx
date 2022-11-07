@@ -44,13 +44,19 @@ function TodoProd() {
                   <li>Pack 3: $6.000</li>
                   <li>Pack 2: $4.800</li>
                   <li style={{marginTop:20}}>
-                    {data?.map((product) => (
+                    {data?.map((product) => {
+                      if(product.id == 1)
+                    return (
                     <div key={product.id} className="product">
-                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 3</Button></div>))}
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 3</Button></div>)
+                    })}
                     {' '}
-                    {data?.map((product) => (
+                    {data?.map((product) => {
+                      if(product.id == 2)
+                    return (
                     <div key={product.id} className="product">
-                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 2</Button></div>))}
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Pack 2</Button></div>)
+                    })}
                   </li>
                 </ul>
               </div>
@@ -71,7 +77,21 @@ function TodoProd() {
                   <hr/>
                   <li>Lentes Cuadrados: $16.200 (2u)</li>
                   <li>Lentes Alargados: $14.400 (2u)</li>
-                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 3)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button></div>)
+                    })}
+                    {' '}
+                    {data?.map((product) => {
+                      if(product.id == 4)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></div>)
+                    })}
+                  </li>
                 </ul>
               </div>
             </div>            
@@ -93,7 +113,21 @@ function TodoProd() {
                   <hr/>
                   <li>Carcasa Logotipo: $4.500</li>
                   <li>Carcasa Transparente: $3.600</li>
-                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Logo.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Transp.</Button></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 5)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Logo.</Button></div>)
+                    })}
+                    {' '}
+                    {data?.map((product) => {
+                      if(product.id == 6)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Transp..</Button></div>)
+                    })}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -113,7 +147,14 @@ function TodoProd() {
                   <hr/>
                   <li>Tallas Disponibles: M</li>
                   <li>Valor: $10.000</li>
-                  <li style={{marginTop:25}}><Boton/></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 7)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar a Carrito</Button></div>)
+                    })}
+                  </li>
                 </ul>
               </div>
             </div>            
@@ -135,7 +176,14 @@ function TodoProd() {
                   <hr/>
                   <li>Talla Única</li>
                   <li>Valor: $4.500</li>
-                  <li style={{marginTop:25}}><Boton/></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 8)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar a Carrito</Button></div>)
+                    })}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -155,7 +203,14 @@ function TodoProd() {
                   <hr/>
                   <li>Talla Única</li>
                   <li>Valor: $7.000</li>
-                  <li style={{marginTop:25}}><Boton/></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 9)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar a Carrito</Button></div>)
+                    })}
+                  </li>
                 </ul>
               </div>
             </div>            
@@ -177,7 +232,21 @@ function TodoProd() {
                   <hr/>
                   <li>Lentes Cuadrados: $9.000</li>
                   <li>Lentes Alargados: $8.000</li>
-                  <li style={{marginTop:20}}><Button style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button>{' '}<Button style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></li>
+                  <li style={{marginTop:20}}>
+                    {data?.map((product) => {
+                      if(product.id == 10)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Cuadr.</Button></div>)
+                    })}
+                    {' '}
+                    {data?.map((product) => {
+                      if(product.id == 11)
+                    return (
+                    <div key={product.id} className="product">
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Alarg.</Button></div>)
+                    })}
+                  </li>
                 </ul>
               </div>
             </div>
