@@ -9,17 +9,11 @@ const api_url = "https://vocyjutwgnmeldu.form.io/afiliados/submission"
 async function getAfil(){
   const response = await fetch(api_url);
   const data = await response.json();
-
   const nombre0 = data[2].data.nombre;
-
   document.getElementById("nombreAfiliado0").textContent = nombre0;
-
   const nombre1 = data[1].data.nombre;
-
   document.getElementById("nombreAfiliado1").textContent = nombre1;
-
   const nombre2 = data[0].data.nombre;
-
   document.getElementById("nombreAfiliado2").textContent = nombre2;
 }
 getAfil();
