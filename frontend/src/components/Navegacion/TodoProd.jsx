@@ -1,7 +1,6 @@
 import React from 'react'
-import Boton from './Boton';
-import Pad1 from "./Fotos/Pad1.jpg"
-import Pad2 from "./Fotos/Pad2.jpg"
+import Pad4 from "./Fotos/Pad4.jpg"
+import Pad2uni from "./Fotos/Pad2uni.png"
 import Carcasa1 from "./Fotos/Carcasa1.jpeg"
 import Carcasa2 from "./Fotos/Carcasa2.jpeg"
 import Lentes1 from "./Fotos/Lentes1.jpeg"
@@ -10,7 +9,6 @@ import Bikini from "./Fotos/Bikini.png"
 import Cintillo1 from "./Fotos/Cintillo1.png"
 import Cintillo2 from "./Fotos/Cintillo2.png"
 import Rulos1 from "./Fotos/Rulos1.png"
-import Rulos2 from "./Fotos/Rulos2.png"
 import { Button } from 'react-bootstrap'; 
 import { useDispatch } from 'react-redux';
 import { useGetAllProductsQuery } from '../../features/productsApi';
@@ -29,8 +27,11 @@ function TodoProd() {
         <h1 style={{fontWeight: 800, fontSize:43, marginBottom:50, marginTop:50}}>Todos Nuestros Productos</h1>
         <div className='row' style={{marginTop:50, marginBottom:50}}>
           <div className='col-md-6 d-flex align-items-start justify-content-start'>
-            <div className='col-md-6 d-flex align-items-start justify-content-start'>
-              <img src={Pad1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+            <div className='thumbnail col-md-6 d-flex align-items-start justify-content-start'>
+              <div className="figure">
+                <img className="image-main" src={Pad4} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <img className="image-hover" src={Pad2uni} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              </div>
             </div>
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>
@@ -64,7 +65,10 @@ function TodoProd() {
           </div>
           <div className='col-md-6 d-flex align-items-start justify-content-start'>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
-              <img src={Lentes1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              <div className="figure">
+                <img className="image-main" src={Lentes1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <img className="image-hover" src={Lentes2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              </div>            
             </div>
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>
@@ -100,7 +104,10 @@ function TodoProd() {
         <div className='row' style={{marginTop:50, marginBottom:50}}>
           <div className='col-md-6 d-flex align-items-start justify-content-start'>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
-              <img src={Carcasa1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              <div className="figure">
+                <img className="image-main" src={Carcasa2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <img className="image-hover" src={Carcasa1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              </div>  
             </div>
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>
@@ -125,7 +132,7 @@ function TodoProd() {
                       if(product.id == 6)
                     return (
                     <div key={product.id} className="product">
-                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Transp..</Button></div>)
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Transp.</Button></div>)
                     })}
                   </li>
                 </ul>
@@ -163,7 +170,10 @@ function TodoProd() {
         <div className='row' style={{marginTop:50, marginBottom:50}}>
           <div className='col-md-6 d-flex align-items-start justify-content-start'>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
-              <img src={Cintillo1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              <div className="figure">
+                <img className="image-main" src={Cintillo1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <img className="image-hover" src={Cintillo2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              </div> 
             </div>
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>
@@ -219,7 +229,10 @@ function TodoProd() {
         <div className='row' style={{marginTop:50, marginBottom:50}}>
           <div className='col-md-6 d-flex align-items-start justify-content-start'>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
-              <img src={Lentes2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              <div className="figure">
+                <img className="image-main" src={Lentes1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <img className="image-hover" src={Lentes2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+              </div> 
             </div>
             <div className='col-md-6 d-flex align-items-center justify-content-start'>
               <div className='row'>

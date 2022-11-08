@@ -1,6 +1,6 @@
 import React from 'react'
-import Pad1 from "./Fotos/Pad1.jpg"
-import Pad2 from "./Fotos/Pad2.jpg"
+import Pad4 from "./Fotos/Pad4.jpg"
+import Pad2uni from "./Fotos/Pad2uni.png"
 import Carcasa1 from "./Fotos/Carcasa1.jpeg"
 import Carcasa2 from "./Fotos/Carcasa2.jpeg"
 import Lentes1 from "./Fotos/Lentes1.jpeg"
@@ -24,7 +24,10 @@ function Promos() {
           <div className='row' style={{marginTop:50, marginBottom:50}}>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
               <div className='col-md-6 d-flex align-items-start justify-content-start'>
-                <img src={Pad1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <div className="figure">
+                  <img className="image-main" src={Pad4} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                  <img className="image-hover" src={Pad2uni} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                </div>
               </div>
               <div className='col-md-6 d-flex align-items-center justify-content-start'>
                 <div className='row'>
@@ -58,7 +61,10 @@ function Promos() {
             </div>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
               <div className='col-md-6 d-flex align-items-start justify-content-start'>
-                <img src={Lentes1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <div className="figure">
+                  <img className="image-main" src={Lentes1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                  <img className="image-hover" src={Lentes2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                </div>  
               </div>
               <div className='col-md-6 d-flex align-items-center justify-content-start'>
                 <div className='row'>
@@ -94,7 +100,10 @@ function Promos() {
           <div className='row' style={{marginBottom:100}}>
             <div className='col-md-6 d-flex align-items-start justify-content-start'>
               <div className='col-md-6 d-flex align-items-start justify-content-start'>
-                <img src={Carcasa1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                <div className="figure">
+                  <img className="image-main" src={Carcasa2} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                  <img className="image-hover" src={Carcasa1} style={{borderRadius:25, objectFit:"cover", height:330, width:250}}/>
+                </div>               
               </div>
               <div className='col-md-6 d-flex align-items-center justify-content-start'>
                 <div className='row'>
@@ -119,7 +128,7 @@ function Promos() {
                       if(product.id == 6)
                     return (
                     <div key={product.id} className="product">
-                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Transp..</Button></div>)
+                    <Button onClick={() => handleAddToCart(product)} style={{marginTop:5}} variant="danger" size="sm">Agregar Transp.</Button></div>)
                     })}
                   </li>
                   </ul>
