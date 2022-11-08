@@ -17,23 +17,23 @@ function Footer() {
                     </div>
                     <ul className='col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500, marginTop:10}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Links Útiles</h5></li>
-                        <li><NavLink to="/contenido/#Ventas">Contenido</NavLink></li>
-                        <li><NavLink to="/contenido/#How">Cómo Funciona</NavLink></li>
-                        <li><NavLink to="/soporte/#Dudas">Soporte</NavLink></li>
+                        <li><NavLink to="/contenido/#">Contenido</NavLink></li>
+                        <li><NavLink to="/contenido/#">Cómo Funciona</NavLink></li>
+                        <li><NavLink to="/soporte/#">Soporte</NavLink></li>
                         <li><NavLink to ="/contenido/#Ubicación">Ubícanos</NavLink></li>
                         <li><NavLink to="/contenido/#Términos">Términos de Servicio</NavLink></li>
                     </ul>                    
                     <ul className='col-12 col-md-2 justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500, marginTop:10}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Comunidad</h5></li>
-                        <li><NavLink to="/soporte/#Dudas">FAQ</NavLink></li>
-                        <li><NavLink to="/cliente/#Comentarios">Clientes</NavLink></li>
+                        <li><NavLink to="/soporte/#">FAQ</NavLink></li>
+                        <li><NavLink to="/cliente/#">Clientes</NavLink></li>
                         <li><NavLink to="/cliente/#Sugerencias">Sugerencias</NavLink></li>
-                        <li><NavLink to="/blog/#Noticias">Blog</NavLink></li>
+                        <li><NavLink to="/blog/#">Blog</NavLink></li>
                         <li><NavLink to="/cliente/#Newsletter">Newsletters</NavLink></li>
                     </ul>
                     <ul className='col-12 col-md-2  justify-content-start list-unstyled' style = {{lineHeight: 2.5, fontWeight: 500, marginTop:10}}>
                         <li><h5 style={{fontWeight: 600, color: "white"}}>Afiliaciones</h5></li>
-                        <li><NavLink to="/afiliados/#Partners">Afiliados</NavLink></li>
+                        <li><NavLink to="/afiliados/#">Afiliados</NavLink></li>
                         <li><NavLink to="/afiliados/#NewPartner">Convertirse en Afiliado</NavLink></li>
                     </ul>
                 </nav>
