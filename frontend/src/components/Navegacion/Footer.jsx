@@ -11,7 +11,7 @@ function Footer() {
                 <nav className="row">
                     <div className='col-md-6 d-flex align-items-center justify-content-start'>
                         <nav className="row">
-                            <NavLink to="/inicio" ><img src={Logo2} height="150"/></NavLink>
+                            <NavLink to="/inicio/#" ><img src={Logo2} height="150"/></NavLink>
                             <h5 style={{fontWeight: 500, marginTop:15}} className="col-md-9">Tu nuevo lugar favorito para conseguir todos tus productos.</h5>
                         </nav>
                     </div>
