@@ -39,6 +39,12 @@ carro a:hover{
 .caja:hover{
   background-color: #faa7b372!important;
 }
+.sub:hover{
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: #a65460!important;
+  text-underline-offset: 5px;
+}
 .figure {
   position: relative;
   width: 360px; /* can be omitted for a regular non-lazy image */

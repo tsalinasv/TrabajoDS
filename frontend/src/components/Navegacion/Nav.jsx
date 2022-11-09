@@ -17,15 +17,15 @@ function Barra_nav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="justify-content-end" style={{ width: "100%" , fontWeight: 400}}>
-            <Nav.Link href="/inicio">Inicio</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/promociones">Promociones</NavDropdown.Item>
-              <NavDropdown.Item href="/nuevos+productos">Nuevos Productos</NavDropdown.Item>
+            <Nav.Link className="sub" href="/inicio">Inicio</Nav.Link>
+            <NavDropdown className="sub" title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item className="caja" href="/promociones">Promociones</NavDropdown.Item>
+              <NavDropdown.Item className="caja"href="/nuevos+productos">Nuevos Productos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/todos+los+productos">Todos los Productos</NavDropdown.Item>
+              <NavDropdown.Item className="caja" href="/todos+los+productos">Todos los Productos</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="/cliente">Clientes</Nav.Link>
+            <Nav.Link className="sub" href="/nosotros">Nosotros</Nav.Link>
+            <Nav.Link className="sub" href="/cliente">Clientes</Nav.Link>
             <Nav.Link href="/carrito">
             <div className="nav-bag">
               <svg
